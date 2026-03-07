@@ -78,10 +78,13 @@ display:block;
 /* GRID */
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:25px;
+display: grid;
+  /* This creates 2 columns, each taking up exactly half (1fr) of the space */
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; /* Space between the cards */
+  width: 100%;
+  max-width: 1000px; /* Optional: keeps the cards from getting TOO wide on huge screens */
+  margin: 0 auto;    /* Centers the whole grid */
 }
 
 /* CARDS */
@@ -102,16 +105,6 @@ box-shadow:0 8px 20px rgba(0,0,0,0.12);
 .card h3{
 color:var(--main);
 margin-bottom:10px;
-}
-
-/* FOOTER */
-
-footer{
-background:var(--main);
-color:white;
-text-align:center;
-padding:15px;
-font-family:'Inter',sans-serif;
 }
 
 .project-button{
@@ -139,6 +132,17 @@ padding:40px 20px;
 width: 50%;
 aspect-ratio: 16 / 9; /* Sets a consistent shape (like a TV) */
 object-fit: cover;
+}
+
+
+/* FOOTER */
+
+footer{
+background:var(--main);
+color:white;
+text-align:center;
+padding:15px;
+font-family:'Inter',sans-serif;
 }
 
 /* FADE ANIMATION */
