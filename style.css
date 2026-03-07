@@ -114,24 +114,31 @@ padding:15px;
 font-family:'Inter',sans-serif;
 }
 
-.project-section{
-display:none;
-max-width:800px;
-margin:auto;
-}
-
-.project-section img{
-width:100%;
-border-radius:10px;
-margin:20px 0;
-}
-
-.project-tab{
+.project-button{
 background:none;
 border:none;
 cursor:pointer;
 text-align:left;
 width:100%;
+}
+
+.project-button img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.project-detail{
+display:none;
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.project-detail img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
 }
 
 /* FADE ANIMATION */
