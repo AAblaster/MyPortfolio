@@ -51,7 +51,10 @@ function openProject(id){
 
 document.getElementById("projects").style.display = "none";
 
-document.getElementById(id).style.display = "block";
+const project = document.getElementById(id);
+project.style.display = "block";
+
+project.scrollIntoView({behavior:"smooth"});
 
 }
 
