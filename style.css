@@ -114,6 +114,26 @@ padding:15px;
 font-family:'Inter',sans-serif;
 }
 
+.project-section{
+display:none;
+max-width:800px;
+margin:auto;
+}
+
+.project-section img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
+}
+
+.project-tab{
+background:none;
+border:none;
+cursor:pointer;
+text-align:left;
+width:100%;
+}
+
 /* FADE ANIMATION */
 
 @keyframes fade{
