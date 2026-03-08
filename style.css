@@ -61,14 +61,6 @@ main {
   min-height: 80vh;
 }
 
-.home-container {
-  width: 150px !important; 
-  height: 150px !important;
-  display: flex;
-  align-items: center;
-  gap: 40px; /* Space between text and image */
-}
-
 /* On mobile, stack them vertically */
 @media (max-width: 600px) {
   .home-container {
