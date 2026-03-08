@@ -61,11 +61,18 @@ main {
   min-height: 80vh;
 }
 
-#home img {
-  width: 40%;
-  max-width: 300px; /* It will never get bigger than 300px */
-  border-radius: 10px;
-  margin-bottom: 10px;
+.home-container {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between text and image */
+}
+
+/* On mobile, stack them vertically */
+@media (max-width: 600px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* TAB SECTIONS */
