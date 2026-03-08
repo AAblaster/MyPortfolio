@@ -63,6 +63,7 @@ main {
 
 #home img {
   width: 40%;
+  max-width: 300px; /* It will never get bigger than 300px */
   border-radius: 10px;
   margin-bottom: 10px;
 }
