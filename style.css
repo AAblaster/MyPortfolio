@@ -71,6 +71,11 @@ main {
   display: block;
 }
 
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Adds space between the title and the cards */
+}
+
 /* GRID SYSTEM */
 .grid {
   display: grid;
