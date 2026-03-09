@@ -109,11 +109,20 @@ main {
 }
 
 #about .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1rem;
   gap: 20px;
   margin: 0 auto;
 }
+
+#contact .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+
 /* CARDS */
 .card {
   background: white;
@@ -121,6 +130,14 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#about .card {
+  max-width: 300px;
+}
+
+.card p{
+  overflow-wrap: break-word;
 }
 
 .card:hover {
@@ -131,6 +148,24 @@ main {
 .card h3 {
   color: var(--main);
   margin-bottom: 10px;
+}
+
+#skills_list li {
+  color: var(--main);
+  margin-bottom: 10px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#experience_list li {
+  color: var(--main);
+  margin-bottom: 10px;
+  text-align: left;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* PROJECT ELEMENTS */
@@ -146,6 +181,10 @@ main {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.resume_image{
+  width: 100%;
 }
 
 .project-detail {
@@ -195,15 +234,34 @@ main {
 /* ACTIVE STATE (When clicked) */
 .project-detail button:active {
   transform: scale(0.98);
+  display: flex;
+  gap: 20px;
 }
 
-/* FOOTER */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   background: var(--main);
   color: white;
-  text-align: center;
   padding: 15px;
   font-family: 'Inter', sans-serif;
+}
+
+.footer-email {
+  margin: 0;
+}
+
+.instagram_image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-link {
+  display: flex;
 }
 
 /* ANIMATIONS */
