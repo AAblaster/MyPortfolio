@@ -93,6 +93,11 @@ main {
   display: block;
 }
 
+#about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 #projects h2 {
   text-align: center;
   margin-bottom: 30px; /* Adds space between the title and the cards */
@@ -130,10 +135,6 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#about .card {
-  max-width: 300px;
 }
 
 .card p{
